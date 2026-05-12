@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaos Drive 2077</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hud-panel top-left">
+        <p class="eyebrow">Realtime Canvas Mayhem</p>
+        <h1>Chaos Drive 2077</h1>
+        <p>Thread a supercar through storm traffic, physics debris, police drones, oil slicks, lightning and neon billboards.</p>
+      </section>
+
+      <section class="hud-panel top-right stats" aria-live="polite">
+        <span>Score <strong id="score">0</strong></span>
+        <span>Combo <strong id="combo">x1</strong></span>
+        <span>Heat <strong id="heat">0%</strong></span>
+        <span>Speed <strong id="speed">0</strong> km/h</span>
+      </section>
+
+      <canvas id="game" aria-label="Chaos Drive 2077 game canvas"></canvas>
+
+      <section class="hud-panel bottom-left controls">
+        <strong>Drive</strong>
+        <span>WASD / Arrow keys</span>
+        <span>Space: shockwave blast</span>
+        <span>Shift: nitro drift</span>
+      </section>
+
+      <button id="startButton" class="start-card">
+        <span class="pulse"></span>
+        <strong>Start chaos run</strong>
+        <small>Dodge traffic, collect boosts, cause near-misses, survive the storm.</small>
+      </button>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "chaos-drive-2077",
+  "version": "1.0.0",
+  "description": "A chaotic neon storm driving game built with canvas.",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "build": "node --check src/main.js"
+  }
+}
