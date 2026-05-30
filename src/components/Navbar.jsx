@@ -1,0 +1,2 @@
+const links = [['home','Home'],['quiz','Quiz'],['result','Results'],['dashboard','Dashboard'],['tools','AI Tools'],['premium','Premium']];
+export default function Navbar({ view, navigate, lockedPath }) { return <nav className="nav"><button className="brand" onClick={() => navigate('home')}>⚡ YoungFounder AI</button><div>{links.map(([id,label]) => <button key={id} className={view===id?'active':''} onClick={() => navigate(id)}>{label}</button>)}</div>{lockedPath && <span className="locked">🔒 {lockedPath.title}</span>}</nav>; }

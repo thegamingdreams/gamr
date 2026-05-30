@@ -1,0 +1,1 @@
+export default function AchievementGrid({ achievements = [] }) { const all = ['First Idea','Quiz Complete','Path Locked','First Lead','First Sale','Weekly Review']; return <div className="badge-grid">{all.map(a => <span key={a} className={achievements.includes(a) ? 'earned' : ''}>🏆 {a}</span>)}</div>; }
